@@ -13,7 +13,8 @@ public class Application {
         try {
         	CronExpression cronExpression = new CronExpression(expression);
 			CronExpressionDescription cronExpressionDescription = new CronExpressionDescription(cronExpression);
-			logger.info(cronExpressionDescription.getDescription());
+			// Keeping sysout to preserve output format
+			System.out.println(cronExpressionDescription.getDescription());
 		} catch (Exception exception) {
 			// Catches NumberFormatException, IncorrectArgumentsException and EmptyExpressionException
 			// Have different exceptions here if operations performed on them are different

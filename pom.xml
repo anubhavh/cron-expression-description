@@ -18,6 +18,7 @@
         <!-- Implementation dependent libraries -->
         <junit-jupiter-api.version>5.9.0</junit-jupiter-api.version>
         <slf4j-api.version>2.0.3</slf4j-api.version>
+        <slf4j-simple.version>2.0.3</slf4j-simple.version>
     </properties>
 
     <dependencies>
@@ -37,6 +38,15 @@
             <version>${slf4j-api.version}</version>
         </dependency>
         <!-- end::slf4j -->
+
+        <!-- tag::slf4j-simple -->
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>${slf4j-simple.version}</version>
+        </dependency>
+        <!-- end::slf4j-simple -->
 
     </dependencies>
 

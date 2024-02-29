@@ -190,7 +190,7 @@ class CronExpressionDescriptionTest {
     @Test
     void testInvalidComma() throws EmptyExpressionException, IncorrectArgumentsException {
         /* Given */
-        String expression = "*/30 20 ,, 3 2-3 /usr";
+        String expression = "*/3 2 * * ,, /usr";
 
         CronExpression cronExpression = new CronExpression(expression);
         CronExpressionDescription cronExpressionDescription = new CronExpressionDescription(cronExpression);
